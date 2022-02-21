@@ -6,6 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+	<PropertyGroup>
+		<OpenApiGenerateDocumentsOnBuild>true</OpenApiGenerateDocumentsOnBuild>
+		<!-- path relative to your csproj where generated files will be placed -->
+		<OpenApiDocumentsOutputDirectory>..\..\api</OpenApiDocumentsOutputDirectory>
+	</PropertyGroup>
+	
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
